@@ -30,30 +30,26 @@ function setup() {
 }
 
 function draw() {
-  if(paused){
-    //do this stuff 
-  }else{
-    // do the normal stuff
-  
-    
-  background(0);
-  population.run();
-  // Displays count to window
-  lifeP.html(count);
+  if(paused) {
+  } else {  
+    background(0);
+    population.run();
+    // Displays count to window
+    lifeP.html(count);
 
-  count++;
-  if (count == lifespan) {
-    population.evaluate();
-    population.selection();
-    // Population = new Population();
-    count = 0;
+    count++;
+    if (count == lifespan) {
+      population.evaluate();
+      population.selection();
+      // Population = new Population();
+      count = 0;
+    }
+    // Renders barrier for rockets
+    fill(255);
+    rect(rx, ry, rw, rh);
+    // Renders target
+    ellipse(target.x, target.y, 16, 16);
   }
-  // Renders barrier for rockets
-  fill(255);
-  rect(rx, ry, rw, rh);
-  // Renders target
-  ellipse(target.x, target.y, 16, 16);
-}
 }
 function KeyPressed() {
   if(key === 'p') {
