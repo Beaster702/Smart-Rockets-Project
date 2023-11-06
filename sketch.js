@@ -29,7 +29,7 @@ function setup() {
 
 }
 
-function draw() {if(paused){//do this stuff 3 else{/ do the normal stuff}
+function draw() {if(paused){//do this stuff }else{/ do the normal stuff}
   background(0);
   population.run();
   // Displays count to window
