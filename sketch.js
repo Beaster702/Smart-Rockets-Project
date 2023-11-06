@@ -20,7 +20,7 @@ var rx = 100;
 var ry = 150;
 var rw = 200;
 var rh = 10;
-
+var paused = false;
 function setup() {
   createCanvas(400, 300);
   population = new Population();
@@ -29,7 +29,7 @@ function setup() {
 
 }
 
-function draw() {
+function draw() {if(paused){//do this stuff 3 else{/ do the normal stuff}
   background(0);
   population.run();
   // Displays count to window
@@ -48,3 +48,5 @@ function draw() {
   // Renders target
   ellipse(target.x, target.y, 16, 16);
 }
+function KeyPressed(){if(Key === 'p'){// do pause stuff
+paused = true;}
