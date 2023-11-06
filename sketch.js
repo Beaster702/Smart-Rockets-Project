@@ -29,7 +29,13 @@ function setup() {
 
 }
 
-function draw() {if(paused){//do this stuff }else{/ do the normal stuff}
+function draw() {
+  if(paused){
+    //do this stuff 
+  }else{
+    / do the normal stuff
+  }
+    
   background(0);
   population.run();
   // Displays count to window
@@ -48,5 +54,8 @@ function draw() {if(paused){//do this stuff }else{/ do the normal stuff}
   // Renders target
   ellipse(target.x, target.y, 16, 16);
 }
-function KeyPressed(){if(Key === 'p'){// do pause stuff
-paused = true;}
+function KeyPressed(){
+  if(Key === 'p'){
+    // do pause stuff
+paused = true;
+}
