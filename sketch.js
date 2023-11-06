@@ -56,7 +56,7 @@ function draw() {
 }
 }
 function KeyPressed(){
-  if(Key === 'p'){
+  if(key === 'p'){
     // do pause stuff
 paused = true;
 }
