@@ -52,6 +52,7 @@ function draw() {
   }
 }
 function KeyPressed() {
+  console.log(key);
   if(key === 'p') {
     // do pause stuff
 paused = true;
