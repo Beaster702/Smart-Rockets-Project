@@ -33,8 +33,8 @@ function draw() {
   if(paused){
     //do this stuff 
   }else{
-    / do the normal stuff
-  }
+    // do the normal stuff
+  
     
   background(0);
   population.run();
@@ -53,6 +53,7 @@ function draw() {
   rect(rx, ry, rw, rh);
   // Renders target
   ellipse(target.x, target.y, 16, 16);
+}
 }
 function KeyPressed(){
   if(Key === 'p'){
