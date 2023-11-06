@@ -55,8 +55,9 @@ function draw() {
   ellipse(target.x, target.y, 16, 16);
 }
 }
-function KeyPressed(){
-  if(key === 'p'){
+function KeyPressed() {
+  if(key === 'p') {
     // do pause stuff
 paused = true;
+}
 }
