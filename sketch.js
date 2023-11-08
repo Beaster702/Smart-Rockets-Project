@@ -34,7 +34,7 @@ function draw() {
     // Write Paused Message
     console.log('PAUSED');
     textSize(100);
-    text('PAUSED' , 100, 100);
+    text('PAUSED' , 80, 100);
   } else {  
     background(0);
     population.run();
