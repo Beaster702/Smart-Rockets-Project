@@ -33,7 +33,8 @@ function draw() {
     // Do paused stuff
     // Write Paused Message
     console.log('PAUSED');
-    text('PAUSED')
+    textSize(100);
+    text('PAUSED' , 100, 100);
   } else {  
     background(0);
     population.run();
