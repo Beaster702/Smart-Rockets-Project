@@ -33,7 +33,7 @@ function draw() {
     // Do paused stuff
     // Write Paused Message
     console.log('PAUSED');
-    textSize(75);
+    textSize(50);
     textAlign(CENTER, CENTER);
 
     const middleX = width / 2;
