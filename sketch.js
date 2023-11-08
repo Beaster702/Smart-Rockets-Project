@@ -26,11 +26,11 @@ function setup() {
   population = new Population();
   lifeP = createP();
   target = createVector(width / 2, 50);
-
 }
 
 function draw() {
-  if(paused) {
+  if (paused) {
+    // Do paused stuff
   } else {  
     background(0);
     population.run();
@@ -51,10 +51,9 @@ function draw() {
     ellipse(target.x, target.y, 16, 16);
   }
 }
-function KeyPressed() {
-  console.log(key);
-  if(key === 'p') {
-    // do pause stuff
-paused = true;
-}
+
+function keyPressed() {
+  if (key === 'p') {
+      paused = true;
+   }
 }
