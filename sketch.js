@@ -32,6 +32,8 @@ function draw() {
   if (paused) {
     // Do paused stuff
     // Write Paused Message
+    console.log('PAUSED');
+    text('PAUSED')
   } else {  
     background(0);
     population.run();
