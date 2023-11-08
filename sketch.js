@@ -37,8 +37,8 @@ function draw() {
     textAlign(CENTER, CENTER);
 
     const middleX = width / 2;
-    const middleY = height / -15;
-    text('PAUSED' , middleX, middleY);
+    const middleY = height / 2;
+    text('PAUSED' , middleX, middleY -15);
   } else {  
     background(0);
     population.run();
