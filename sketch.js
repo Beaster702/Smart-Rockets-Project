@@ -33,8 +33,12 @@ function draw() {
     // Do paused stuff
     // Write Paused Message
     console.log('PAUSED');
-    textSize(100);
-    text('PAUSED' , 80, 100);
+    textSize(75);
+    textAlign(CENTER, CENTER);
+
+    const middleX = width / 2;
+    const middleY = height / 2;
+    text('PAUSED' , 100, 100);
   } else {  
     background(0);
     population.run();
