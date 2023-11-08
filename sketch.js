@@ -38,7 +38,7 @@ function draw() {
 
     const middleX = width / 2;
     const middleY = height / 2;
-    text('PAUSED' , 100, 100);
+    text('PAUSED' , middleX, middleY);
   } else {  
     background(0);
     population.run();
