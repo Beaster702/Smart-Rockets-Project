@@ -55,18 +55,10 @@ function draw() {
     ellipse(target.x, target.y, 16, 16);
   }
 }
-<<<<<<< HEAD
-function KeyPressed() {
-  console.log(key);
-  if(key === 'p') {
-    // do pause stuff
-paused = true;
-// Write Paused Message
-=======
+
 
 function keyPressed() {
   if (key === 'p') {
       paused = true;
    }
->>>>>>> 4d5aba8e34b61af7cdd1804d36201957d49db170
-}
+  }
