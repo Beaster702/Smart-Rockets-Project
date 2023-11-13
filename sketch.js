@@ -68,7 +68,7 @@ function keyPressed() {
   }
 function keypressed() {
   if (key === 'p') {
-    puased = false;
+    paused = false;
   }
 }
 function appear()
