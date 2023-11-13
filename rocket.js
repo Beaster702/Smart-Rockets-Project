@@ -82,7 +82,10 @@ function Rocket(dna) {
     push();
     //color customization of rockets
     noStroke();
-    fill(255, 150);
+    // Select a random color from the colors array
+    let c = random(COLORS); // The random function can randomly choose an item from an array
+    // Set the fill color to the chosen color
+    fill(c);
     //translate to the postion of rocket
     translate(this.pos.x, this.pos.y);
     //rotatates to the angle the rocket is pointing
