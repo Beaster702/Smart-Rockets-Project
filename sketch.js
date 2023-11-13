@@ -73,3 +73,14 @@ document.getElementById("firstt").style.visibility="visible";
 //Below is what I want to happen after the "enter" key has been pressed.
 document.getElementById("startrouter").style.visibility="visible";
 }
+function waitingKeypress() {
+  return new Promise((resolve) => {
+    document.addEventListener('keydown', onKeyHandler);
+    function onKeyHandler(e) {
+      if (e.keyCode === 13) {
+        document.removeEventListener('keydown', onKeyHandler);
+        resolve();
+      }
+    }
+  });
+}
