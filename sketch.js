@@ -66,6 +66,11 @@ function keyPressed() {
       paused = true;
    }
   }
+function keypressed() {
+  if (key === 'p') {
+    puased = false;
+  }
+}
 function appear()
 {
 document.getElementById("firstt").style.visibility="visible";
