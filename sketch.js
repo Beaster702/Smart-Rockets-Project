@@ -53,7 +53,7 @@ function draw() {
       count = 0;
     }
     // Renders barrier for rockets
-    fill(255);
+    fill(128,0,0);
     rect(rx, ry, rw, rh);
     // Renders target
     ellipse(target.x, target.y, 16, 16);
