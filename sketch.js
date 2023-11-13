@@ -66,3 +66,10 @@ function keyPressed() {
       paused = true;
    }
   }
+function appear()
+{
+document.getElementById("firstt").style.visibility="visible";
+//here is where I want the pause to happen until the user presses "enter" key
+//Below is what I want to happen after the "enter" key has been pressed.
+document.getElementById("startrouter").style.visibility="visible";
+}
