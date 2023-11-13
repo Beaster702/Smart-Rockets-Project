@@ -59,7 +59,14 @@ function draw() {
     ellipse(target.x, target.y, 16, 16);
   }
 }
-
+function keyPressed() {
+  if (key === 'p') {
+    if (paused) {
+      paused = false;
+    }else{
+    }paused = true;
+  }
+}
 
 function keyPressed() {
   if (key === 'p') {
