@@ -2,7 +2,7 @@
 // http://codingtra.in
 // http://patreon.com/codingtrain
 // Code for: https://youtu.be/bGz7mv2vD6g
-const COLORS = [color(255,255,255), color(43,164,103), color(47,43,164), color(128,0,0)];
+const COLORS = [[255,255,255], [43,164,103], [47,43,164], [128,0,0]];
 // Constructor function
 function Rocket(dna) {
   // Physics of rocket at current instance
