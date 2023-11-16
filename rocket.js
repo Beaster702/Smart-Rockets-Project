@@ -2,7 +2,7 @@
 // http://codingtra.in
 // http://patreon.com/codingtrain
 // Code for: https://youtu.be/bGz7mv2vD6g
-const COLORS = [color(255,255,255), color(43,164,103), color(47,43,164), color(128,0,0)];
+const COLORS = [[255,255,255], [43,164,103], [47,43,164], [128,0,0]];
 // Constructor function
 function Rocket(dna) {
   // Physics of rocket at current instance
@@ -82,7 +82,10 @@ function Rocket(dna) {
     push();
     //color customization of rockets
     noStroke();
-    fill(255, 150);
+    // Select a random color from the colors array
+    let c = random(COLORS); // The random function can randomly choose an item from an array
+    // Set the fill color to the chosen color
+    fill(c);
     //translate to the postion of rocket
     translate(this.pos.x, this.pos.y);
     //rotatates to the angle the rocket is pointing
