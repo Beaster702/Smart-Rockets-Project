@@ -60,35 +60,9 @@ function draw() {
     ellipse(target.x, target.y, 16, 16);
   }
 }
-function keyPressed() {
-  if (key === 'p') {
-    if (paused) {
-      paused = false;
-    }else{
-    }paused = true;
-  }
-}
 
 function keyPressed() {
   if (key === 'p') {
       paused = !paused;
   }
-}
-function appear()
-{
-document.getElementById("firstt").style.visibility="visible";
-//here is where I want the pause to happen until the user presses "enter" key
-//Below is what I want to happen after the "enter" key has been pressed.
-document.getElementById("startrouter").style.visibility="visible";
-}
-function waitingKeypress() {
-  return new Promise((resolve) => {
-    document.addEventListener('keydown', onKeyHandler);
-    function onKeyHandler(e) {
-      if (e.keyCode === 13) {
-        document.removeEventListener('keydown', onKeyHandler);
-        resolve();
-      }
-    }
-  });
 }
