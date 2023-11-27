@@ -94,8 +94,6 @@ function resetSketch() {
   y=10;
 }
   }
-}
-
 function keyPressed() {
   if (key === 'p') {
       paused = !paused;
