@@ -70,7 +70,6 @@ function setup() {
   button.mousePressed(resetSketch);
   paused = false;
 }
-
 function resetSketch() {
   x=10;
   y=10;
