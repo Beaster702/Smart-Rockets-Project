@@ -44,7 +44,15 @@ function draw() {
     population.run();
     // Displays count to window
     lifeP.html(count);
-
+console.log('RESET');
+textSize(70);
+textAlign(CENTER , CENTER);
+const middleX = width / 2;
+const middleY = height / 2;
+text('RESET' , middleX, middleY -17);
+  } else {
+  }
+  }
     count++;
     if (count == lifespan) {
       population.evaluate();
