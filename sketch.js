@@ -41,7 +41,6 @@ function draw() {
     console.log('RESET');
 textSize(70);
 textAlign(CENTER , CENTER);
-text('RESET'); 
     background(0);
     population.run();
     // Displays count to window
