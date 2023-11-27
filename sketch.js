@@ -67,6 +67,7 @@ function setup() {
   createCanvas(400, 400);
   let button = createButton("reset sketch");
   button.mousePressed(resetSketch);
+  paused = false;
 }
 
 function draw() {
