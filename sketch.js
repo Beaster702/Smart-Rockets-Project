@@ -71,24 +71,6 @@ function setup() {
   paused = false;
 }
 
-function draw() {
-  background(220);
-
-  ellipse(x, y, 20, 20);
-  x += xspeed;
-  y += yspeed;
-
-  if (x >= width || x <= 0) {
-   xspeed = -xspeed
-  }
-  
-  if (y >= height || y <= 0) {
-   yspeed = -yspeed
-  }
-  
-
-}
-
 function resetSketch() {
   x=10;
   y=10;
