@@ -41,8 +41,6 @@ function draw() {
     console.log('RESET');
 textSize(70);
 textAlign(CENTER , CENTER);
-const middleX = width / 2;
-const middleY = height / 2;
 text('RESET' , middleX, middleY -17); 
     background(0);
     population.run();
