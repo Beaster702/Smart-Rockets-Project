@@ -68,4 +68,10 @@ function Population() {
       this.rockets[i].show();
     }
   }
+
+  this.updateColors = function() {
+    for (var i = 0; i < this.popsize; i++) {
+      this.rockets[i].updateColor();
+    }
+  }
 }

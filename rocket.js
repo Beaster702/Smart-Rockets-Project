@@ -5,6 +5,7 @@
 const COLORS = [[255,255,255], [43,164,103], [47,43,164], [128,0,0]];
 // Constructor function
 function Rocket(dna) {
+  this.color = [255, 255, 255];
   // Physics of rocket at current instance
   this.pos = createVector(width / 2, height);
   this.vel = createVector();
@@ -76,16 +77,21 @@ function Rocket(dna) {
       this.vel.limit(4);
     }
   }
+
+  this.updateColor = function() {
+    // Select a random color from the colors array
+    this.color = random(COLORS); // The random function can randomly choose an item from an array
+  }
+  
   // displays rocket to window
   this.show = function() {
     // push and pop allow's rotating and translation not to affect other objects
     push();
     //color customization of rockets
     noStroke();
-    // Select a random color from the colors array
-    let c = random(COLORS); // The random function can randomly choose an item from an array
+    
     // Set the fill color to the chosen color
-    fill(c);
+    fill(this.color);
     //translate to the postion of rocket
     translate(this.pos.x, this.pos.y);
     //rotatates to the angle the rocket is pointing
