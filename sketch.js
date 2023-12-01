@@ -21,11 +21,15 @@ var ry = 150;
 var rw = 200;
 var rh = 10;
 var paused = false;
+
 function setup() {
   createCanvas(1000 , 1000);
   population = new Population();
   lifeP = createP();
   target = createVector(width / 2, 50);
+  let button = createButton("reset sketch");
+  button.mousePressed(resetSketch);
+  paused = false;
 }
 
 function draw() {
@@ -67,12 +71,6 @@ let y = 10;
 let xspeed = 5;
 let yspeed = 2;
 
-function setup() {
-  createCanvas(400, 400);
-  let button = createButton("reset sketch");
-  button.mousePressed(resetSketch);
-  paused = false;
-}
 function resetSketch() {
   x=10;
   y=10;
