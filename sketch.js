@@ -39,13 +39,13 @@ function draw() {
     const middleY = height / 2;
     text('PAUSED' , middleX, middleY -15);
     console.log('RESET');
-textSize(70);
-textAlign(CENTER , CENTER);
+    textSize(70);
+    textAlign(CENTER , CENTER);
+  } else {
     background(0);
     population.run();
     // Displays count to window
     lifeP.html(count);
-  }
     count++;
     if (count == lifespan) {
       population.evaluate();
@@ -59,7 +59,10 @@ textAlign(CENTER , CENTER);
     // Renders target
     fill(128,0,0);
     ellipse(target.x, target.y, 16, 16);
-    let x = 10;
+  }
+}
+
+let x = 10;
 let y = 10;
 let xspeed = 5;
 let yspeed = 2;
@@ -74,7 +77,6 @@ function resetSketch() {
   x=10;
   y=10;
 }
-  }
 function keyPressed() {
   if (key === 'p') {
       paused = !paused;
