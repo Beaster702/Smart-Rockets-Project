@@ -81,15 +81,12 @@ function keyPressed() {
   }
 }
 function mouseMoved() {
-  console.log(' ${mouseX} , ${mouseY}');
+  console.log(`${mouseX} , ${mouseY}`);
   // prevent default
   return false;
 }
 function mouseClicked() {
-  if (isMouseOverReset()) {
-    console.log('You clicked it!');
-  } else {
-    console.log('clicked; ${mouseX} , ${mouseY}');
-  }
+  // Update the colors of the rockets
+  population.updateColors();
   return false;
 }
